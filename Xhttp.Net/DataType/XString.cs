@@ -9,7 +9,6 @@ namespace AltairStudios.Xhttp.DataType {
 		#region Constructors
 		/// <summary>
 		/// Initializes a new instance of the <see cref="AltairStudios.Xhttp.DataType.XString"/> class.
-		/// Constructor for the XString class
 		/// </summary>
 		/// <param name='name'>
 		/// The argument name.
@@ -21,7 +20,6 @@ namespace AltairStudios.Xhttp.DataType {
 		
 		/// <summary>
 		/// Initializes a new instance of the <see cref="AltairStudios.Xhttp.DataType.XString"/> class.
-		/// Constructor for the XString class
 		/// </summary>
 		/// <param name='name'>
 		/// The argument name.
