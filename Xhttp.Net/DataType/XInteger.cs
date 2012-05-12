@@ -13,7 +13,7 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <param name='name'>
 		/// The argument name.
 		/// </param>
-		public XInteger(string name) : base(name, 0, Types.INTEGER) {
+		public XInteger(string name) : this(name, 0) {
 		}
 		
 		
