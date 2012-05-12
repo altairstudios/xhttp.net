@@ -83,10 +83,7 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <param name='name'>
 		/// Argument Name.
 		/// </param>
-		public XArgument(string name) {
-			this.name = name;
-			this.value = null;
-			this.type = Types.NULL;
+		public XArgument(string name) : this(name, null, Types.NULL) {
 		}
 		
 		
@@ -100,10 +97,7 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <param name='value'>
 		/// Argument Value.
 		/// </param>
-		public XArgument(string name, object value) {
-			this.name = name;
-			this.value = value;
-			this.type = Types.NULL;
+		public XArgument(string name, object value) : this(name, valuem, Types.NULL) {
 		}
 		
 		

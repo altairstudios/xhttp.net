@@ -36,6 +36,7 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="DataType\XArgument.cs" />
     <Compile Include="DataType\Types.cs" />
+    <Compile Include="DataType\XString.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
