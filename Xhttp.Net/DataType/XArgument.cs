@@ -24,7 +24,7 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <summary>
 		/// The argument type.
 		/// </summary>
-		protected int type;
+		protected Types type;
 		#endregion
 		
 		
@@ -66,7 +66,7 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <value>
 		/// The argument type.
 		/// </value>
-		public int Type {
+		public Types Type {
 			get {
 				return this.type;
 			}
@@ -84,7 +84,9 @@ namespace AltairStudios.Xhttp.DataType {
 		/// Argument Name.
 		/// </param>
 		public XArgument(string name) {
-			
+			this.name = name;
+			this.value = null;
+			this.type = Types.NULL;
 		}
 		
 		
@@ -99,7 +101,9 @@ namespace AltairStudios.Xhttp.DataType {
 		/// Argument Value.
 		/// </param>
 		public XArgument(string name, object value) {
-		
+			this.name = name;
+			this.value = value;
+			this.type = Types.NULL;
 		}
 		
 		
@@ -116,8 +120,10 @@ namespace AltairStudios.Xhttp.DataType {
 		/// <param name='type'>
 		/// Argument Type.
 		/// </param>
-		public XArgument(string name, object value, int type) {
-		
+		public XArgument(string name, object value, Types type) {
+			this.name = name;
+			this.value = value;
+			this.type = type;
 		}
 		#endregion
 	}

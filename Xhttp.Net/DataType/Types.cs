@@ -44,6 +44,7 @@ namespace AltairStudios.Xhttp.DataType {
 		BASE64 = 8,
 		/// <summary>
 		/// Constant DATETIME.
+		/// ISO 8601 format
 		/// </summary>
 		DATETIME = 9
 	}
