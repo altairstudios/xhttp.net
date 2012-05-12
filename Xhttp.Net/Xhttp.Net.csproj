@@ -39,6 +39,7 @@
     <Compile Include="DataType\XString.cs" />
     <Compile Include="DataType\XNull.cs" />
     <Compile Include="DataType\XInteger.cs" />
+    <Compile Include="DataType\XBoolean.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
