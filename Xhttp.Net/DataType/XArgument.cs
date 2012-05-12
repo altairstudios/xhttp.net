@@ -2,6 +2,9 @@ using System;
 
 
 namespace AltairStudios.Xhttp.DataType {
+	/// <summary>
+	/// Class to create an argument for an XSchema action
+	/// </summary>
 	public class XArgument {
 		#region Attributes
 		/// <summary>
