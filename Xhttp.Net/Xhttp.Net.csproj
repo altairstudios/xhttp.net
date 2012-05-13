@@ -41,6 +41,8 @@
     <Compile Include="DataType\XInteger.cs" />
     <Compile Include="DataType\XBoolean.cs" />
     <Compile Include="DataType\XDouble.cs" />
+    <Compile Include="DataType\XArray.cs" />
+    <Compile Include="DataType\XLambda.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
