@@ -1,7 +1,16 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xhttp.Net", "Xhttp.Net\Xhttp.Net.csproj", "{2F99A8CD-DB46-434C-9542-9F82E8DAB519}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E8D2274F-98E4-488A-8189-F1F8E8EA1C60}"
+	ProjectSection(MonoDevelopProperties) = preProject
+		BaseDirectory = .
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormTests", "WebFormTests\WebFormTests.csproj", "{1EC1D096-62CA-46B3-B034-816906490741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTests", "MvcTests\MvcTests.csproj", "{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +18,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EC1D096-62CA-46B3-B034-816906490741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC1D096-62CA-46B3-B034-816906490741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC1D096-62CA-46B3-B034-816906490741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC1D096-62CA-46B3-B034-816906490741}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2F99A8CD-DB46-434C-9542-9F82E8DAB519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2F99A8CD-DB46-434C-9542-9F82E8DAB519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F99A8CD-DB46-434C-9542-9F82E8DAB519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F99A8CD-DB46-434C-9542-9F82E8DAB519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EC1D096-62CA-46B3-B034-816906490741} = {E8D2274F-98E4-488A-8189-F1F8E8EA1C60}
+		{C1BCE529-BBFD-41E5-A139-7F0C00F3F7F8} = {E8D2274F-98E4-488A-8189-F1F8E8EA1C60}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Xhttp.Net\Xhttp.Net.csproj

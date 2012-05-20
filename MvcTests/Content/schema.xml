@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xhttp xmlns:xhttp="http://www.xhttp.org/schema" version="1.0">
+	<xhttp:schema version="1.0">
+		<xhttp:info name="service" value="test"/>
+		<xhttp:info name="host" value="http://www.example.com/xhttp"/>
+		<xhttp:info name="port" value="80"/>
+		<xhttp:info name="author" value="Juan Benavides"/>
+		<xhttp:info name="email" value="juan@altairstudios.es"/>
+		<xhttp:info name="link" value="http://www.xhttp.org"/>
+		<xhttp:info name="version" value="1.0"/>
+		<xhttp:info name="build" value="20120520"/>
+		<xhttp:action name="status" function="status">
+			<xhttp:return type="2"/>
+		</xhttp:action>
+		<xhttp:action name="remote_status" function="remote_status">
+			<xhttp:return type="2"/>
+		</xhttp:action>
+		<xhttp:action name="test_null" function="test_null">
+			<xhttp:exception code="99" message="You must pass a null value"/>
+			<xhttp:argument name="value" type="0" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_null" function="test_null">
+			<xhttp:exception code="99" message="You must pass a null value"/>
+			<xhttp:argument name="value" type="0" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_boolean" function="test_boolean">
+			<xhttp:exception code="99" message="You must pass a boolean value"/>
+			<xhttp:argument name="value" type="1" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_integer" function="test_integer">
+			<xhttp:exception code="99" message="You must pass an integer"/>
+			<xhttp:argument name="value" type="2" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_double" function="test_double">
+			<xhttp:exception code="99" message="You must pass a floating-point number"/>
+			<xhttp:argument name="value" type="3" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_string" function="test_string">
+			<xhttp:exception code="99" message="You must pass a string"/>
+			<xhttp:argument name="value" type="4" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_array" function="test_array">
+			<xhttp:exception code="99" message="You must pass an array"/>
+			<xhttp:argument name="value" type="5" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_struct" function="test_struct">
+			<xhttp:exception code="99" message="You must pass an object"/>
+			<xhttp:argument name="value" type="6" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_lambda" function="test_lambda">
+			<xhttp:exception code="99" message="You must pass a lambda"/>
+			<xhttp:argument name="value" type="7" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_base64" function="test_base64">
+			<xhttp:exception code="99" message="You must pass a base64 encoded string"/>
+			<xhttp:argument name="value" type="8" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+		<xhttp:action name="test_datetime" function="test_datetime">
+			<xhttp:exception code="99" message="You must pass a valid ISO-8601 date/time"/>
+			<xhttp:argument name="value" type="9" use="required"/>
+			<xhttp:return type="4"/>
+		</xhttp:action>
+	</xhttp:schema>
+</xhttp>

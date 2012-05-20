@@ -1,0 +1,19 @@
+ForceType application/x-asp-net
+
+<Files *.*>
+	SetOutputFilter DEFLATE
+</Files> 
+
+
+<FilesMatch "\.(jpg|gif|css|ico|js|png)$"> 
+    ExpiresActive on 
+    ExpiresDefault "access plus 7 days" 
+</FilesMatch> 
+
+
+FileETag MTime Size
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+</IfModule>
